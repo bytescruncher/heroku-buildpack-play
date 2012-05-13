@@ -51,7 +51,7 @@ install_play()
 }
 
 PLAY_VERSION=`grep 'play[ \t]*[0-9\.]' conf/dependencies.yml | sed -E -e 's/[ \t]*-[ \t]*play[ \t]*([0-9\.]*).*/\1/'`
-DEFAULT_PLAY_VERSION="1.2.4"
+DEFAULT_PLAY_VERSION="2.0.1"
 VERSION_DECLARED=true
 
 if [ -z "$PLAY_VERSION" ] ; then
